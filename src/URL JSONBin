@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
-    <div class="konten">
-      <h1>✦ CRUD ✦</h1>
+  <div>
     <input v-model="newName" placeholder="Enter name" />
     <button @click="addName">Add Name</button>
     <ul>
@@ -11,14 +9,14 @@
       </li>
     </ul>
   </div>
-</div>
 </template>
 
 <script>
 import axios from 'axios';
 
-const JSONBIN_URL = 'https://api.jsonbin.io/v3/b/6658ab95ad19ca34f871b940';
-const JSONBIN_SECRET_KEY = '$2a$10$DAyUrkEOEvYb0od5x9pA8OyfLfBiXtTcL03DHnhjlHY06HDACnJp.';
+// Pastikan Anda mendapatkan URL dan kunci rahasia JSONBin Anda sendiri
+const JSONBIN_URL = 'https://api.jsonbin.io/v3/b/YOUR_BIN_ID';
+const JSONBIN_SECRET_KEY = 'YOUR_SECRET_KEY';
 
 export default {
   data() {
@@ -78,26 +76,8 @@ export default {
 <style>
 input {
   margin-right: 10px;
-  border-radius: 5px;
 }
 button {
-  margin-left: 15px;
-  color: black;
-  border-radius: 10px;
-  margin-bottom: 5px;
-}
-.container{
-  border: 4px solid black;
-  border-radius: 25px;
-  background-color: #F5F5F5;
-  margin-left: 700px;
-  margin-right: 700px;
-  margin-top: 400px;
-  
-}
-.konten{
-  padding: 30px;
-  color: solid black;
-  font-family: 'Courier New', Courier, monospace;
+  margin-left: 10px;
 }
 </style>
