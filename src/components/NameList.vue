@@ -92,7 +92,7 @@ button {
   background-color: #F5F5F5;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 400px;
+  margin-top: auto;
   
 }
 .konten{
