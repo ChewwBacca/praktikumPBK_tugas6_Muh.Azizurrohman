@@ -90,9 +90,7 @@ button {
   border: 4px solid black;
   border-radius: 25px;
   background-color: #F5F5F5;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
+
   
 }
 .konten{
